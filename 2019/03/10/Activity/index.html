@@ -5,19 +5,19 @@
   
 
   
-  <title>Hello World | Hexo</title>
+  <title>Android Activity | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Android Activity AndroidManifest 文件所有的活动都要在AndroidManifest.xml的&amp;lt;activity&amp;gt;标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在标签的内部加入&amp;lt;intent-fi">
+  <meta name="description" content="AndroidManifest 文件所有的活动都要在AndroidManifest.xml的&amp;lt;activity&amp;gt;标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在标签的内部加入&amp;lt;intent-filter&amp;gt;标签，并在这个标签">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="Android Activity">
 <meta property="og:url" content="http://yoursite.com/2019/03/10/Activity/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Android Activity AndroidManifest 文件所有的活动都要在AndroidManifest.xml的&amp;lt;activity&amp;gt;标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在标签的内部加入&amp;lt;intent-fi">
+<meta property="og:description" content="AndroidManifest 文件所有的活动都要在AndroidManifest.xml的&amp;lt;activity&amp;gt;标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在标签的内部加入&amp;lt;intent-filter&amp;gt;标签，并在这个标签">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-10T13:59:40.557Z">
+<meta property="og:updated_time" content="2019-03-10T14:01:49.581Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Android Activity AndroidManifest 文件所有的活动都要在AndroidManifest.xml的&amp;lt;activity&amp;gt;标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在标签的内部加入&amp;lt;intent-fi">
+<meta name="twitter:title" content="Android Activity">
+<meta name="twitter:description" content="AndroidManifest 文件所有的活动都要在AndroidManifest.xml的&amp;lt;activity&amp;gt;标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在标签的内部加入&amp;lt;intent-filter&amp;gt;标签，并在这个标签">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -78,7 +78,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Android Activity
     </h1>
   
 
@@ -86,8 +86,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Android-Activity"><a href="#Android-Activity" class="headerlink" title="Android Activity"></a>Android Activity</h1><hr>
-<h2 id="AndroidManifest-文件"><a href="#AndroidManifest-文件" class="headerlink" title="AndroidManifest 文件"></a>AndroidManifest 文件</h2><p>所有的活动都要在AndroidManifest.xml的<code>&lt;activity&gt;</code>标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在<activity>标签的内部加入<code>&lt;intent-filter&gt;</code>标签，并在这个标签里添加<code>&lt;action android:name=&quot;android.intent.action.MAIN&quot;/&gt;</code>和<code>&lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</code>这两句声明即可。</activity></p>
+        <h2 id="AndroidManifest-文件"><a href="#AndroidManifest-文件" class="headerlink" title="AndroidManifest 文件"></a>AndroidManifest 文件</h2><p>所有的活动都要在AndroidManifest.xml的<code>&lt;activity&gt;</code>标签中对活动进行注册才能生效，实际上当我们新建Activity时Android Studio替我们完成了这一步骤。不过，仅仅是这样注册了活动，我们还要为程序配置主活动让程序知道从哪个活动开始才行，就是在<activity>标签的内部加入<code>&lt;intent-filter&gt;</code>标签，并在这个标签里添加<code>&lt;action android:name=&quot;android.intent.action.MAIN&quot;/&gt;</code>和<code>&lt;category android:name=&quot;android.intent.category.LAUNCHER&quot; /&gt;</code>这两句声明即可。</activity></p>
 <h2 id="在活动中使用Toast"><a href="#在活动中使用Toast" class="headerlink" title="在活动中使用Toast"></a>在活动中使用Toast</h2><p>Toast的用法非常简单，通过静态方法<code>makeText()</code>创建出一个Toast对象，然后调用<code>show()</code>将Toast显示出来就可以了。这里需要注意的是，<code>makeText()</code>方法需要传入3个参数。第一个参数是<code>Context</code>，也就是Toast要求的上下文，由于活动本身就是一个<code>Context</code>对象，因此这里直接传入<code>FirstActivity.this</code>即可。第二个参数是Toast显示的文本内容，第三个参数是Toast显示的时长，有两个内置常量可以选择<code>Toast.LENGTH_SHORT</code>和<code>Toast.LENGTH_LONG</code>。</p>
 <p>例如</p>
 <pre><code>Toast.makeText(Activity.this, &quot;You used Toast&quot;,Toast.LENGTH_SHORT).show();
@@ -212,7 +211,7 @@ startActivity(intent);
       <ul>
         
           <li>
-            <a href="/2019/03/10/Activity/">Hello World</a>
+            <a href="/2019/03/10/Activity/">Android Activity</a>
           </li>
         
           <li>
